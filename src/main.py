@@ -20,9 +20,6 @@ def main():
     else:
         raise ValueError(f"Unsupported OS: {os_environment}")
 
-    print(f"OS environment: {os_environment}")
-    print(f"Display size: {dim.width}x{dim.height}")
-    return
     response = client.responses.create(
         model="computer-use-preview",
         tools=[{
